@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Third Post!"
+title:  "My Website!"
 date:   2018-05-15 14:16:49 -0700
 categories: uncategorized
 author: Mr. Lopez
