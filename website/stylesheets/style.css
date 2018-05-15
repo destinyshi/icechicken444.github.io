@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* color palette
+color 1: #FFF233
+color 2: #A30F28
+color 3: #296ECC
+*/
+
+
+/*-------------------------------------------------
+
+	BASIC STRUCTURE
+
+-------------------------------------------------*/
+
+#wrapper {
+	width: 960px;
+	padding: 5px;
+	margin:20px auto;
+}
+
+#header {
+	height: 100px;
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+}
+
+#content {
+	float: right;
+	width: 600px;
+}
+
+#footer {
+	clear: both;
+}
+
+
+#footer p {
+	text-align:right;
+}
+
+/*-------------------------------------------------
+
+	COLORS AND FONTS
+
+-------------------------------------------------*/
+body {
+		font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+		color: blue;
+		background-image: url("../images/background.gif");
+		
+}
+
+#header, #sidebar, #content, #footer {
+	background-color: rgba(250,250,250,0.8);
+	margin-bottom: 4px;
+	border:double;
+	border-radius: 8px;
+	border-color: grey;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+/*-------------------------------------------------
+
+	RESPONSIVE WIDTHS
+
+-------------------------------------------------*/
+@media screen and (max-width: 980px) {
+	#wrapper {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#content, #sidebar {
+		width: auto;
+		float: none;
+	}
+	#header {
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		float: none;
+	}
+}
+
+
+
+
+
+

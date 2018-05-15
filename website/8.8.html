@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script type="text/javascript">
+// $10
+// 15%
+// 2 people
+function tipCalc(bill, percent, people) {
+	alert("calculating...");
+	var totalBill = bill * (percent/100) + bill;
+	return totalBill/people;
+}
+
+
+
+var t= Number(prompt("what would you want to tip in percent"));
+var b= Number(prompt("what was your total"));
+var parties = confirm("Would you like to split between the number of parties?");
+var p = 1;
+if (parties) {
+	p = Number(prompt("How many people would like to split among?"));
+}
+
+
+document.write(tipCalc(b, t, p));
+</script>
+</body>
+</html>

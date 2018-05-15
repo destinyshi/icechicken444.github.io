@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<img src="../images/room.jpg" width="296" height="300" alt=""/>
+<script type="text/javascript">
+while(true) {
+		var score = eval(prompt("what time is it enter 1 for 1 am       2 for 2 am and so on"));
+		if( score < 1 || score > 24 ) 
+			{ alert("ERROR!!!!! you must enter a time. enter 1 for 1 am       2 for 2 am and so on"); }
+			continue;
+		}
+		if( score >= 6  && score <= 10 )
+			{ alert(" you can find a continental breakfast served in the lobby."); }
+		else if( score >= 11 && score < 14	 ) {
+			alert("the restaurant is open!"); 
+			var reservation = confirm("do you want to make a reservation?" );
+	
+			if( reservation == true ) { alert(" your reservation is for 11:30"); }
+		}
+		else if( score >= 17 && score < 21	 )
+			{ alert(" you can order room service or visit the restaurant."); }
+		else 
+			{ alert("nothing is open. you can go get a snack or do something else"); }
+		
+		var exit = confirm("Do you want to enter another time?");
+		if exit == false { break; }
+	}
+</script>
+
+
+
+</body>
+</html>

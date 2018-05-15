@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+while(true) {
+	var userChoice = prompt("Do you choose rock, paper or scissors lizard or spock?");
+	userChoice = userChoice.toLowerCase();
+	if(userChoice == "rock" || userChoice == "paper" || userChoice == "scissors" || userChoice == "lizard" || userChoice == "spock") {
+		break;
+	}
+	else {
+		alert("Error. Please enter rock, paper or scissors lizard or spock");
+	}
+}
+var computerChoice = Math.random();
+  if (computerChoice < 0.2) {
+	computerChoice = "rock";
+  } else if(computerChoice <= 0.40) {
+	computerChoice = "paper";
+  } else if(computerChoice <= 0.60) {
+	computerChoice = "lizard";
+  } else if(computerChoice <= 0.80) {
+	computerChoice = "spock";
+  } else {
+	computerChoice = "scissors";
+  } 
+  //console.log("Computer chooses: " + computerChoice);
+
+var compare = function(choice1,choice2) {
+    
+    if (choice1 === choice2) {
+        
+        return "The result is a tie!" + " " + "Lets play again." ;
+    }
+    
+    else if (choice1 === "rock") {
+        
+        if (choice2 === "scissors") {
+            return "rock wins" + "<br>" + "You beat the computer, nice job!";
+        }
+		else if (choice2 === "spock") {
+			return "spock wins" + "<br>" + "Your really smart computer beat you.";
+		}
+		else if (choice2 === "lizard") {
+			return  "rock wins" + "<br>" + "You beat the computer, nice job!";
+		}
+        else {
+            return "paper wins" + "<br>" + "Your really smart computer beat you.";
+        }
+    }
+    
+    else if (choice1 === "spock") {
+        
+        if (choice2 === "rock") {
+            return "spock wins" + "<br>" + "You beat the computer, nice job!";
+        }
+		else if (choice2 === "paper") {
+			return "paper wins" + "<br>" + "You beat the computer, nice job!";
+		}
+		else if (choice2 === "lizard") {
+			return "lizard wins" + "<br>" + "Your really smart computer beat you.";
+		}
+        else {
+            return "spock wins" + "<br>" + "You beat the computer, nice job!";
+        }
+            
+    }
+	
+	
+	else if (choice1 === "lizard") {
+        
+        if (choice2 === "spock") {
+            return "lizard wins" + "<br>" + "You beat the computer, nice job!";
+        }
+		else if (choice2 === "rock") {
+			return "rock wins" + "<br>" + "Your really smart computer beat you.";
+		}
+		else if (choice2 === "paper") {
+			return "lizard wins" + "<br>" + "You beat the computer, nice job!";
+		}
+        else {
+            return "scissors wins" + "<br>" + "Your really smart computer beat you.";
+        }
+            
+    }
+    
+    else if (choice1 === "scissors") {
+        
+        if (choice2 === "rock") {
+            return "rock wins" + "<br>" + "Your really smart computer beat you.";
+        }
+		else if (choice2 === "lizard") {
+			return "lizard wins" + "<br>" + "Your really smart computer beat you.";
+		}
+		else if (choice2 === "paper") {
+			return "scissors wins" + "<br>" + "You beat the computer, nice job!";
+		}
+        else {
+            return "spock win" + "<br>" + "You beat the computer, nice job!";
+        }
+    }
+	else if (choice1 === "lizard") {
+        
+        if (choice2 === "spock") {
+            return "lizard wins" + "<br>" + "You beat the computer, nice job!";
+        }
+		else if (choice2 === "rock") {
+			return "rock wins" + "<br>" + "Your really smart computer beat you.";
+		}
+		else if (choice2 === "paper") {
+			return "lizard wins" + "<br>" + "You beat the computer, nice job!";
+		}
+        else {
+            return "scissors wins" + "<br>" + "Your really smart computer beat you.";
+        }
+            
+    }
+    
+    
+    } //closes compare function
+
+    
+   document.write("Computer chose: " + computerChoice + "<br>");
+   document.write(compare(userChoice,computerChoice));
+</script>
+</body>
+</html>

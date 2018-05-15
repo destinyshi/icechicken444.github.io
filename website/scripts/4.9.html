@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1 id="header"> my screen color changer </h1>
+
+<p> MAGIC THIS WILL CHANGE TO WHITE WHEN DARK AND DARK WHEN WHITE MAGIC</p>
+
+<br><br><br>
+<button type="button" onClick="myFunction()">change to dark screen</button> <br><br>
+<button type="button" onClick="myFunctions()">change to light screen</button>
+<script> 
+function myFunction () {
+	document.body.style.backgroundColor ="#000000";
+	//document.body.style.backgroundImage = "../images/guillaume-kurkdijan.gif";
+	document.body.style.color = 'white'
+}
+
+function  myFunctions () {
+	document.body.style.backgroundColor="#FFFFFF";
+document.body.style.color = 'black';
+}
+</script>
+</body>
+</html>

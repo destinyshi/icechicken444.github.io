@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+ <img src="../images/cow.jpg" width="400px">
+<script type="text/javascript">
+
+var dayoftheweek = Number(prompt("which day of the week is it? Enter 1 for sunday, 2 for monday, etc.", "1"));
+
+switch(dayoftheweek) {
+	case 1:
+		alert("we are closed on sundays");
+		break;
+	case 2:
+	case 3:
+	case 4:
+	case 5:
+	case 6:
+		alert("business hours monday-friday are 8am-5pm");
+		break;
+	case 7:
+		alert("business hours on saturday are 10am-3pm");
+		break;
+	default:
+		alert("please try again, enter 1 for sunday 2 for monday, ect.");
+		break;
+}
+</script>
+
+</body>
+</html>
